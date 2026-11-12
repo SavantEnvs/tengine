@@ -1,0 +1,41 @@
+req.rc=0
+req.method=2
+req.version=1001
+req.quoted=1
+req.unparsed=/a%20b/c/../d?x=1&y=2
+req.uri_rc=0
+req.uri=/a b/d
+req.args=x=1&y=2
+req.arg_y=0:2
+hdr=Host|example.com:8080
+hdr=X-Test|padded value
+hdr=Cookie|sid=abc; theme=dark
+hdr.final=1
+resp.rc=0
+resp.version=1000
+resp.code=404
+chunk.rc=-2
+chunk.size=26
+chunk.first_rc=0
+chunk.first_size=5
+chunk.next_rc=0
+chunk.done_consumed=8
+size.10k=10240
+offset.2m=2097152
+time.1h30m=5400
+time.250ms=250
+httpdate=784111777
+inet.addr=3232235796
+cidr.mask=ff000000
+b64.rc=0
+b64.text=hello tengine
+unescape=a b/c
+escape=a%20b%2Fc%3Fd
+pop3.rc=0
+pop3.command_is_user=1
+pop3.nargs=1
+pop3.arg0=alice
+dubbo.enc_rc=0
+dubbo.dec_rc=0
+dubbo.n=1
+dubbo.kv=method=sayHello

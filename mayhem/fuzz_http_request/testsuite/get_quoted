@@ -1,0 +1,4 @@
+GET /a%20b/..//c/./d%2Fe?x=%41 HTTP/1.1
+Host: [::1]:80
+Cookie: sid=abc; theme=dark
+

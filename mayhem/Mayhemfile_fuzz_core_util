@@ -1,0 +1,10 @@
+project: savantenvs/tengine
+target: fuzz_core_util
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_core_util/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_core_util
+    libfuzzer: true
+    dictionary: /mayhem/mayhem/fuzz_core_util/fuzz_core_util.dict
+    timeout: 30

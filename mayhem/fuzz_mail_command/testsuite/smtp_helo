@@ -1,0 +1,5 @@
+EHLO example.com
+MAIL FROM:<a@b.c>
+RCPT TO:<d@e.f>
+RSET
+QUIT

@@ -1,0 +1,10 @@
+project: savantenvs/tengine
+target: fuzz_mail_command
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_mail_command/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_mail_command
+    libfuzzer: true
+    dictionary: /mayhem/mayhem/fuzz_mail_command/fuzz_mail_command.dict
+    timeout: 30

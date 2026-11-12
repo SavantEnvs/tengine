@@ -1,0 +1,10 @@
+# Upstream's .dockerignore drops .git, .github and Makefile; the commit image needs the full repo
+# (git history included), so this file takes precedence for `docker build -f mayhem/Dockerfile`.
+objs/
+objs-*/
+*.o
+*.a
+*.so
+.DS_Store
+*.swp
+*~
